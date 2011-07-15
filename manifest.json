@@ -1,0 +1,16 @@
+{
+  "name": "Easy Unfriend",
+  "version": "1.0",
+  "description": "Tired of searching for the unfriend link on Facebook? Easily remove and unfriend friends with Easy Unfriend.",
+  "content_scripts": [
+    {
+      "matches": ["http://*.facebook.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+  "permissions": [
+	"tabs", "http://*.facebook.com/*"
+  ],
+  "background_page": "background.html"
+}

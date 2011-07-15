@@ -1,0 +1,10 @@
+<script src="jquery.js"></script>
+<section>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#submit').click(function(e) {
+				chrome.tabs.create({'url': 'http://beerfortextbooks.heroku.com/results?q=' + $("#keywords").val(), 'selected':true});
+			});
+		});
+	</script>
+</section>
